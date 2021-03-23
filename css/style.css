@@ -8,3 +8,87 @@
 body {
     font-family: 'Rubik Mono One', sans-serif;
 }
+
+/* header */
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+/* nav::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+nav ul{
+    float: right;
+    list-style: none;
+}
+
+nav li {  
+    display: inline-block;
+    width: 50px;
+    line-height: 50px;   
+    margin: 2vh 15px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);   
+}
+
+nav a {
+    padding: 15px; 
+    color: mediumpurple;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: mediumpurple ;
+}
+
+nav li:hover a{
+    color: white;
+}
+
+/* blocks */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    text-align: center;
+}
+
+.content img {
+    width: 100%;
+}
+
+.content h2 {
+    font-size: 50px;
+    color: tomato;
+    text-transform: uppercase;
+}
+
+#calvin{
+    background-color: tomato;
+}
+#calvin h2 {
+    color: khaki;
+}
+
+#tommy {
+    background-color: springgreen;
+}
+
+#converse {
+    background-color: khaki;
+}
